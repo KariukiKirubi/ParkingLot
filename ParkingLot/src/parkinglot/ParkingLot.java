@@ -11,7 +11,18 @@ package parkinglot;
  * @author Shazka Systems
  */
 public class ParkingLot {
+    
+    String lotType;
 
-    Pork
+    public ParkingLot(String type) {
+        
+        type=this.lotType;        
+    }
+    
+    ParkingLot managerLot;
+    ParkingLot staffLot;
+    ParkingLot generalLot;
+    ParkingLot motocycleLot;
+    
     
 }
