@@ -6,6 +6,8 @@
 
 package parkinglot;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Shazka Systems
@@ -28,21 +30,250 @@ public class Save_Parking extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel8 = new javax.swing.JPanel();
+        jT_slotNumber = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jT_parkingID = new javax.swing.JTextField();
+        jC_parkingType = new javax.swing.JComboBox();
+        jBsave7 = new javax.swing.JButton();
+        jBreset7 = new javax.swing.JButton();
+        jLabel27 = new javax.swing.JLabel();
+        jT_plateNo = new javax.swing.JTextField();
+
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setTitle("Save Parking Details");
+
+        jLabel24.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel24.setText("Parking Type");
+
+        jLabel25.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel25.setText("Slot Number");
+
+        jLabel26.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel26.setText("Parking ID");
+
+        jC_parkingType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select--", "For_Car", "For_Motocycle", "For_Car_Staff", "Management_Staff" }));
+
+        jBsave7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/data_add.png"))); // NOI18N
+        jBsave7.setText("Save");
+        jBsave7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBsave5ActionPerformed(evt);
+            }
+        });
+
+        jBreset7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/refresh.png"))); // NOI18N
+        jBreset7.setText("Reset");
+        jBreset7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBreset5ActionPerformed(evt);
+            }
+        });
+
+        jLabel27.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel27.setText("Plate Number");
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jBsave7, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(jBreset7, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jT_slotNumber)
+                            .addComponent(jT_parkingID)
+                            .addComponent(jC_parkingType, 0, 201, Short.MAX_VALUE)
+                            .addComponent(jT_plateNo))))
+                .addContainerGap(89, Short.MAX_VALUE))
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jC_parkingType, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jT_parkingID, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jT_slotNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jT_plateNo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBsave7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBreset7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 394, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jBreset5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBreset5ActionPerformed
+        //call the method  to reset the fields
+        reset();
+    }//GEN-LAST:event_jBreset5ActionPerformed
+
+    private void jBsave5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBsave5ActionPerformed
+        // Call the method to save the details
+        SaveParkingLotDetails();
+    }//GEN-LAST:event_jBsave5ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBreset;
+    private javax.swing.JButton jBreset1;
+    private javax.swing.JButton jBreset2;
+    private javax.swing.JButton jBreset3;
+    private javax.swing.JButton jBreset4;
+    private javax.swing.JButton jBreset5;
+    private javax.swing.JButton jBreset6;
+    private javax.swing.JButton jBreset7;
+    private javax.swing.JButton jBsave;
+    private javax.swing.JButton jBsave1;
+    private javax.swing.JButton jBsave2;
+    private javax.swing.JButton jBsave3;
+    private javax.swing.JButton jBsave4;
+    private javax.swing.JButton jBsave5;
+    private javax.swing.JButton jBsave6;
+    private javax.swing.JButton jBsave7;
+    private javax.swing.JComboBox jC_parkingType;
+    private javax.swing.JComboBox jCparkingType;
+    private javax.swing.JComboBox jCparkingType1;
+    private javax.swing.JComboBox jCparkingType2;
+    private javax.swing.JComboBox jCparkingType3;
+    private javax.swing.JComboBox jCparkingType4;
+    private javax.swing.JComboBox jCparkingType5;
+    private javax.swing.JComboBox jCparkingType6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JTextField jT_parkingID;
+    private javax.swing.JTextField jT_plateNo;
+    private javax.swing.JTextField jT_slotNumber;
+    private javax.swing.JTextField jTparkingID;
+    private javax.swing.JTextField jTparkingID1;
+    private javax.swing.JTextField jTparkingID2;
+    private javax.swing.JTextField jTparkingID3;
+    private javax.swing.JTextField jTparkingID4;
+    private javax.swing.JTextField jTparkingID5;
+    private javax.swing.JTextField jTparkingID6;
+    private javax.swing.JTextField jTplateNo;
+    private javax.swing.JTextField jTplateNo1;
+    private javax.swing.JTextField jTslotNumber;
+    private javax.swing.JTextField jTslotNumber1;
+    private javax.swing.JTextField jTslotNumber2;
+    private javax.swing.JTextField jTslotNumber3;
+    private javax.swing.JTextField jTslotNumber4;
+    private javax.swing.JTextField jTslotNumber5;
+    private javax.swing.JTextField jTslotNumber6;
     // End of variables declaration//GEN-END:variables
+//Method to Write parking Lot details
+           public void SaveParkingLotDetails(){
+               String fileName="files/Parking_Slot.txt";
+            String type=(String)jC_parkingType.getSelectedItem();
+            String id=jT_parkingID.getText();
+            String slotNumber=jT_slotNumber.getText();
+            String plateNo=jT_plateNo.getText();
+           
+
+            String details=id+"\t"+type+"\t"+slotNumber+"\t"+plateNo+"\t";
+
+            //Call the class writer function
+            File_Writer obj=new File_Writer();
+            obj.Witer_into_File(fileName, details);
+
+                JOptionPane.showMessageDialog(null, "Parking lot Details Saved Successfully");
+
+            }
+           
+           //method to reset the fields
+           public void reset(){
+           
+           jT_parkingID.setText("");
+           jT_slotNumber.setText("");
+           jC_parkingType.setSelectedIndex(0);
+           jT_plateNo.setText("");
+           }
+
 }

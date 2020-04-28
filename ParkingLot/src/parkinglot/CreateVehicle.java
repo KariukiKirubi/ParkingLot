@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class CreateVehicle extends javax.swing.JInternalFrame {
 
-    public String personFile="Person_Details.txt";
+    public String personFile="files/Person_Details.txt";
     /**
      * Creates new form registration
      */

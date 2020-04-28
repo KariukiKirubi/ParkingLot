@@ -34,6 +34,7 @@ public class Mainframe extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        JBcreatePerson1 = new javax.swing.JButton();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -82,6 +83,14 @@ public class Mainframe extends javax.swing.JFrame {
             }
         });
 
+        JBcreatePerson1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/user.png"))); // NOI18N
+        JBcreatePerson1.setText("Start/End Appointment");
+        JBcreatePerson1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBcreatePerson1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -95,6 +104,7 @@ public class Mainframe extends javax.swing.JFrame {
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addComponent(JBcreatePerson1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,11 +115,13 @@ public class Mainframe extends javax.swing.JFrame {
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(41, 41, 41)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addGap(32, 32, 32)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addComponent(JBcreatePerson1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
@@ -192,6 +204,14 @@ public class Mainframe extends javax.swing.JFrame {
         obj.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
+    private void JBcreatePerson1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBcreatePerson1ActionPerformed
+        
+        //Call the method to add appointment
+        Start_End_Appointment obj=new Start_End_Appointment();
+        jDesktopPane1.add(obj);
+        obj.setVisible(true);
+    }//GEN-LAST:event_JBcreatePerson1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -229,6 +249,7 @@ public class Mainframe extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JBcreatePerson;
+    private javax.swing.JButton JBcreatePerson1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

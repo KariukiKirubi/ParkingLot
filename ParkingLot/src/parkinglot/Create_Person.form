@@ -114,10 +114,10 @@
                           <Component id="jLabel9" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                           <Component id="jTstudentphoneNo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="66" max="32767" attributes="0"/>
+                      <EmptySpace pref="60" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jBstudentSave" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
-                          <Component id="jBstudentreset" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="jBstudentreset" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                   </Group>
@@ -173,6 +173,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reset"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBstudentresetActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="jTstudentphoneNo">
             </Component>
@@ -193,179 +196,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel2">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Create Staff ">
-                <Property name="tabTitle" type="java.lang.String" value="Create Staff "/>
-              </JTabbedPaneConstraints>
-            </Constraint>
-          </Constraints>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel11" min="-2" pref="284" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jLabel6" alignment="0" pref="120" max="32767" attributes="0"/>
-                                          <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jLabel5" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace pref="21" max="32767" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTstaffID" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
-                                          <Component id="jTstaffName" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
-                                          <Component id="jTStaffPhone" alignment="0" min="-2" pref="191" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel13" min="-2" pref="128" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jCdesgnation" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
-                      <Component id="jBstaffsave" min="-2" pref="111" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                      <Component id="jBstaffReset" min="-2" pref="105" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="jLabel11" min="-2" pref="44" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jTstaffID" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jTstaffName" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel6" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jTStaffPhone" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel13" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                          <Component id="jCdesgnation" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="37" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jBstaffsave" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
-                          <Component id="jBstaffReset" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel4">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Staff ID"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Staff Name"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel6">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Staff Phone No"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jBstaffsave">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/parkinglot/data_add.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Save"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jBstaffReset">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/parkinglot/refresh.png"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Reset"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTStaffPhone">
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTstaffName">
-            </Component>
-            <Component class="javax.swing.JTextField" name="jTstaffID">
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel11">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="24" style="1"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="ff" red="ff" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Create Staff Panel"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="jLabel13">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="14" style="1"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Staff Designation"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JComboBox" name="jCdesgnation">
-              <Properties>
-                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="3">
-                    <StringItem index="0" value="--Select--"/>
-                    <StringItem index="1" value="Ordinary"/>
-                    <StringItem index="2" value="Manegerial"/>
-                  </StringArray>
-                </Property>
-              </Properties>
-            </Component>
-          </SubComponents>
-        </Container>
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
@@ -381,7 +211,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" pref="129" max="32767" attributes="0"/>
+                          <Component id="jLabel2" pref="133" max="32767" attributes="0"/>
                           <Component id="jLabel1" max="32767" attributes="0"/>
                           <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -435,7 +265,7 @@
                           <Component id="jBvisitorSave" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                           <Component id="jBvisitorReset" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="64" max="32767" attributes="0"/>
+                      <EmptySpace pref="58" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -481,6 +311,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Save"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBvisitorSaveActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jBvisitorReset">
               <Properties>
@@ -492,6 +325,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Reset"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBvisitorResetActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
@@ -504,6 +340,206 @@
                 <Property name="text" type="java.lang.String" value="Create Visitor Panel"/>
               </Properties>
             </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Create Staff ">
+                <Property name="tabTitle" type="java.lang.String" value="Create Staff "/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="10" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jLabel4" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                                          <Component id="jLabel5" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel13" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jTstaffID" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTstaffName" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTStaffPhone" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jCdesgnation" min="-2" pref="191" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="135" max="-2" attributes="0"/>
+                                      <Component id="jBstaffsave" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                                      <Component id="jBstaffReset" min="-2" pref="105" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                      <Component id="jLabel11" min="-2" pref="284" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="119" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel11" min="-2" pref="44" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel4" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" pref="25" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="jLabel13" min="-2" pref="25" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jTstaffID" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="jTstaffName" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="jTStaffPhone" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="jCdesgnation" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jBstaffsave" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                              <Component id="jBstaffReset" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="39" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel11">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="24" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Create Staff Panel"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel6">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Staff Phone No"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="jCdesgnation">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="3">
+                        <StringItem index="0" value="--Select--"/>
+                        <StringItem index="1" value="Ordinary"/>
+                        <StringItem index="2" value="Manegerial"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Staff Name"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel13">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Staff Designation"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel4">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Staff ID"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTStaffPhone">
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTstaffID">
+                </Component>
+                <Component class="javax.swing.JTextField" name="jTstaffName">
+                </Component>
+                <Component class="javax.swing.JButton" name="jBstaffsave">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/parkinglot/data_add.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Save"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBstaffsaveActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JButton" name="jBstaffReset">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="14" style="1"/>
+                    </Property>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/parkinglot/refresh.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Reset"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBstaffResetActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
       </SubComponents>
