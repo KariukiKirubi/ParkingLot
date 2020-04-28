@@ -10,10 +10,12 @@ package parkinglot;
  *
  * @author Shazka Systems
  */
-public class Interface extends javax.swing.JFrame {
+public class WelcomeScreen extends javax.swing.JFrame {
 
- 
-    public Interface() {
+    /**
+     * Creates new form WelcomeScreen
+     */
+    public WelcomeScreen() {
         initComponents();
     }
 
@@ -27,7 +29,6 @@ public class Interface extends javax.swing.JFrame {
     private void initComponents() {
 
         jBafresh = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
         jBcontinue = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -36,6 +37,7 @@ public class Interface extends javax.swing.JFrame {
 
         jBafresh.setFont(new java.awt.Font("Lucida Calligraphy", 0, 14)); // NOI18N
         jBafresh.setForeground(new java.awt.Color(0, 0, 0));
+        jBafresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/refresh.png"))); // NOI18N
         jBafresh.setText("Start afresh");
         jBafresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -43,10 +45,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         jBcontinue.setFont(new java.awt.Font("Lucida Calligraphy", 0, 14)); // NOI18N
         jBcontinue.setForeground(new java.awt.Color(0, 0, 0));
+        jBcontinue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/delete archive.png"))); // NOI18N
         jBcontinue.setText("Continue With Data");
         jBcontinue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,30 +62,36 @@ public class Interface extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(jBcontinue, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBafresh, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64))
             .addGroup(layout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(jBcontinue, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addComponent(jBafresh, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBcontinue, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBafresh, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBcontinue, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBafresh, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jBcontinueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBcontinueActionPerformed
+        Mainframe obj=new Mainframe();
+        obj.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jBcontinueActionPerformed
 
     private void jBafreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBafreshActionPerformed
         //call the function to start the files afresh
@@ -93,12 +100,6 @@ public class Interface extends javax.swing.JFrame {
         obj.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jBafreshActionPerformed
-
-    private void jBcontinueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBcontinueActionPerformed
-        Mainframe obj=new Mainframe();
-        obj.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jBcontinueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,20 +118,20 @@ public class Interface extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WelcomeScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WelcomeScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WelcomeScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WelcomeScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Interface().setVisible(true);
+                new WelcomeScreen().setVisible(true);
             }
         });
     }
@@ -139,8 +140,8 @@ public class Interface extends javax.swing.JFrame {
     private javax.swing.JButton jBafresh;
     private javax.swing.JButton jBcontinue;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
 
 //Method to Start Afresh
  public void startAfresh(){
@@ -171,5 +172,5 @@ public class Interface extends javax.swing.JFrame {
  
  
  }
-    
+
 }
