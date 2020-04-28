@@ -8,6 +8,10 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
  public class File_Writer {
+     
+     
+     
+     
    //Method to write iinto a file
      public void Witer_into_File(String filename, String Message){
     
@@ -54,5 +58,20 @@ import java.util.Scanner;
         
         
      }
+     public void clearFile(String filename){
+    
+    try
+    {
+        PrintWriter writer = new PrintWriter(filename);
+        writer.print("");
+        writer.close();
+    }
+    catch(IOException ioe)
+    {
+        System.err.println("IOException: " + ioe.getMessage());
+    }       
+       
+     }
+     
  
  }

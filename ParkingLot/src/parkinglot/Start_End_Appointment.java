@@ -46,6 +46,11 @@ public class Start_End_Appointment extends javax.swing.JInternalFrame {
         jBstaffsave = new javax.swing.JButton();
         jBstaffReset = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 0));
         jLabel11.setText("Start / End Appointment");
@@ -53,7 +58,7 @@ public class Start_End_Appointment extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel6.setText("Staff Phone No");
 
-        jCdesgnation.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select--", "Ordinary", "Manegerial" }));
+        jCdesgnation.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select--", "Manegerial", "Ordinary" }));
         jCdesgnation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCdesgnationActionPerformed(evt);

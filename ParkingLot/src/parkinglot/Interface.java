@@ -28,26 +28,37 @@ public class Interface extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        jBafresh = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        jBcontinue = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Lucida Calligraphy", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Click to access the Interface");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jBafresh.setFont(new java.awt.Font("Lucida Calligraphy", 0, 14)); // NOI18N
+        jBafresh.setForeground(new java.awt.Color(0, 0, 0));
+        jBafresh.setText("Start afresh");
+        jBafresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jBafreshActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 320, 80));
+        getContentPane().add(jBafresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 230, 80));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jBcontinue.setFont(new java.awt.Font("Lucida Calligraphy", 0, 14)); // NOI18N
+        jBcontinue.setForeground(new java.awt.Color(0, 0, 0));
+        jBcontinue.setText("Continue With Data");
+        jBcontinue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBcontinueActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jBcontinue, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 210, 80));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/CarBackground.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 410));
@@ -56,12 +67,19 @@ public class Interface extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //call the function for the main Frame
+    private void jBafreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBafreshActionPerformed
+        //call the function to start the files afresh
+        startAfresh();
         Mainframe obj=new Mainframe();
         obj.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBafreshActionPerformed
+
+    private void jBcontinueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBcontinueActionPerformed
+        Mainframe obj=new Mainframe();
+        obj.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jBcontinueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -99,8 +117,30 @@ public class Interface extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBafresh;
+    private javax.swing.JButton jBcontinue;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+//Method to Start Afresh
+ public void startAfresh(){
+     String ParkingFile="files/Parking_Slot.txt";
+     String Vehiclefile="files/Vehicle_Details.txt";
+     String StaffFile="files/Staff_Details.txt";
+     String studentFile="files/Student_Details.txt";
+     String visitorFile="files/Visitor_Details.txt";
+     
+     String heaader="ID\tType\tSlotNumber\tPlatenumber";
+     File_Writer obj=new File_Writer();
+     obj.clearFile(visitorFile);
+     obj.clearFile(Vehiclefile);
+     obj.clearFile(StaffFile);
+     obj.clearFile(studentFile);
+     obj.clearFile(ParkingFile);
+     obj.Witer_into_File(ParkingFile, heaader);
+ 
+ 
+ }
+    
 }
