@@ -11,10 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Shazka Systems
- */
+
 public class Start_End_Appointment extends javax.swing.JInternalFrame {
 
     /**

@@ -14,10 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-/**
- *
- * @author Shazka Systems
- */
+
 public class View_Parking extends javax.swing.JInternalFrame {
 
     /**

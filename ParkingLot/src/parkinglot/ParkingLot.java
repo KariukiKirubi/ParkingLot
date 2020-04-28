@@ -6,10 +6,7 @@
 
 package parkinglot;
 
-/**
- *
- * @author Shazka Systems
- */
+
 public class ParkingLot {
     
     String lotType;

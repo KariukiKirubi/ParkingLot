@@ -1,5 +1,0 @@
-
-1	For_Car	1234	Empty
-3	For_Motocycle	3333	Empty
-4	For_Motocycle	444	Empty
-1	For_Car	1234	abcd	

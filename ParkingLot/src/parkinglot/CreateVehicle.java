@@ -8,10 +8,6 @@ package parkinglot;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Shazka Systems
- */
 public class CreateVehicle extends javax.swing.JInternalFrame {
 
     public String personFile="files/Person_Details.txt";

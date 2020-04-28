@@ -8,10 +8,6 @@ package parkinglot;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Shazka Systems
- */
 public class Save_Parking extends javax.swing.JInternalFrame {
 
     /**

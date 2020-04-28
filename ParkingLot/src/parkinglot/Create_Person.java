@@ -8,10 +8,6 @@ package parkinglot;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Shazka Systems
- */
 public class Create_Person extends javax.swing.JInternalFrame {
 
     /**

@@ -9,10 +9,7 @@ package parkinglot;
 import java.util.ArrayList;
 import static parkinglot.Vehicle.numberOfSpots;
 
-/**
- *
- * @author Shazka Systems
- */
+
 public abstract class Vehicle {
         protected static int numberOfSpots;
 	protected VehicleType size;

@@ -12,9 +12,7 @@ package parkinglot;
  */
 public class Interface extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Interface
-     */
+ 
     public Interface() {
         initComponents();
     }

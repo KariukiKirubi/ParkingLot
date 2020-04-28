@@ -10,10 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Shazka Systems
- */
+
 public class Mainframe extends javax.swing.JFrame {
 
     /**
