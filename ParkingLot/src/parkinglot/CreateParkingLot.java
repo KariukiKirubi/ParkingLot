@@ -170,7 +170,7 @@ public class CreateParkingLot extends javax.swing.JInternalFrame {
 
 //Method to Write parking Lot details
            public void SaveParkingLotDetails(){
-               String fileName="files/parking_Slot.txt";
+               String fileName="files/Parking_Slot.txt";
             String type=(String)jCparkingType.getSelectedItem();
             String id=jTparkingID.getText();
             String slotNumber=jTslotNumber.getText();
@@ -182,7 +182,7 @@ public class CreateParkingLot extends javax.swing.JInternalFrame {
             File_Writer obj=new File_Writer();
             obj.Witer_into_File(fileName, details);
 
-                JOptionPane.showMessageDialog(null, "Student Details Saved Successfully");
+                JOptionPane.showMessageDialog(null, "Parking Details Saved Successfully");
 
             }
            //method to reset the fields 

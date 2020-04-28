@@ -50,9 +50,10 @@ public class Start_End_Appointment extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
+        setTitle("Start/ End Appointment");
 
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Start / End Appointment");
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N

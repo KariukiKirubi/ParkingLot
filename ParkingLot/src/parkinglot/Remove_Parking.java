@@ -45,6 +45,12 @@ public class Remove_Parking extends javax.swing.JInternalFrame {
         jLabel19 = new javax.swing.JLabel();
         jTplateNo = new javax.swing.JTextField();
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Remove Parking");
+
         jLabel16.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel16.setText("Parking Type");
 
@@ -57,7 +63,7 @@ public class Remove_Parking extends javax.swing.JInternalFrame {
         jCparkingType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select--", "For_Car", "For_Motocycle", "For_Car_Staff", "Management_Staff" }));
 
         jBsave5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/parkinglot/data_remove.png"))); // NOI18N
-        jBsave5.setText("Save");
+        jBsave5.setText("Remove");
         jBsave5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBsave5ActionPerformed(evt);
@@ -81,10 +87,11 @@ public class Remove_Parking extends javax.swing.JInternalFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(62, 62, 62)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(jBsave5, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(46, 46, 46)
+                        .addGap(73, 73, 73)
+                        .addComponent(jBsave5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                         .addComponent(jBreset5, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,7 +193,7 @@ public class Remove_Parking extends javax.swing.JInternalFrame {
 
         //Method to Write parking Lot details
            public void RemoveParkingLotDetails() throws FileNotFoundException{
-               String fileName="files/parking_Slot.txt";
+               String fileName="files/Parking_Slot.txt";
             
             String type=(String)jCparkingType.getSelectedItem();
             String id=jTparkingID.getText();
@@ -204,7 +211,7 @@ public class Remove_Parking extends javax.swing.JInternalFrame {
            
            
 
-                JOptionPane.showMessageDialog(null, "Parking Lot Details Saved Successfully");
+                JOptionPane.showMessageDialog(null, "Vehicle removed from parking lot Successfully");
 
             }
            

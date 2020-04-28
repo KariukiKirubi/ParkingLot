@@ -132,13 +132,23 @@ public class Interface extends javax.swing.JFrame {
      String visitorFile="files/Visitor_Details.txt";
      
      String heaader="ID\tType\tSlotNumber\tPlatenumber";
+     String student="ID\tName\tPhone";
+     String staff="ID\tName\tPhone\tDesgnation";
+     String visitor="ID\tName\tPhone";
+     String vehicle="V_Name\tColor\tType\tplateNo";
      File_Writer obj=new File_Writer();
      obj.clearFile(visitorFile);
      obj.clearFile(Vehiclefile);
      obj.clearFile(StaffFile);
      obj.clearFile(studentFile);
      obj.clearFile(ParkingFile);
+     
+     //Write the header of each file
      obj.Witer_into_File(ParkingFile, heaader);
+     obj.Witer_into_File(Vehiclefile, vehicle);
+     obj.Witer_into_File(StaffFile, staff);
+     obj.Witer_into_File(studentFile, student);
+     obj.Witer_into_File(visitorFile, visitor);
  
  
  }

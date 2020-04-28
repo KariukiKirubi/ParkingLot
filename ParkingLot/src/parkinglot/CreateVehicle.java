@@ -35,15 +35,13 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTname = new javax.swing.JTextField();
-        jTphone = new javax.swing.JTextField();
+        jTVname = new javax.swing.JTextField();
+        jTcolor = new javax.swing.JTextField();
         jTplate = new javax.swing.JTextField();
         jBadd = new javax.swing.JButton();
         jBreset = new javax.swing.JButton();
-        jCtitle = new javax.swing.JComboBox();
         jCvehicle = new javax.swing.JComboBox();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -54,13 +52,10 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
         setTitle("Create Vehicle Details");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel1.setText("Phone Number");
+        jLabel1.setText("Color");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel2.setText("Name ");
-
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        jLabel3.setText("Title");
+        jLabel2.setText("Vehicle name ");
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel4.setText("Vehicle Type");
@@ -83,9 +78,6 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
                 jBresetActionPerformed(evt);
             }
         });
-
-        jCtitle.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
-        jCtitle.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select--", "Management Staff", "Ordinary Staff", "Student", "Visitor" }));
 
         jCvehicle.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jCvehicle.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "--Select--", "Motocycle", "Car", "Bus", "Lorry" }));
@@ -112,17 +104,13 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jCvehicle, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jCtitle, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jTname, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jTVname, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jTphone, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTcolor, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(82, 113, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -131,16 +119,12 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
                 .addGap(35, 35, 35)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTVname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTphone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCtitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jTcolor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jCvehicle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -148,7 +132,7 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTplate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBadd)
                     .addComponent(jBreset, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -163,7 +147,9 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 14, Short.MAX_VALUE))
         );
 
         pack();
@@ -184,43 +170,39 @@ public class CreateVehicle extends javax.swing.JInternalFrame {
     private javax.swing.JButton jBadd;
     private javax.swing.JButton jBreset;
     private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JComboBox jCtitle;
     private javax.swing.JComboBox jCvehicle;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTname;
-    private javax.swing.JTextField jTphone;
+    private javax.swing.JTextField jTVname;
+    private javax.swing.JTextField jTcolor;
     private javax.swing.JTextField jTplate;
     // End of variables declaration//GEN-END:variables
 
 //Method to save the detail into a file
     public void SaveDetails(){
-    String name=jTname.getText();
-    String phoneNo=jTphone.getText();
-    String title=(String)jCtitle.getSelectedItem();
-    String vehicle=(String)jCvehicle.getSelectedItem();
+    String Vname=jTVname.getText();
+    String color=jTcolor.getText();
+    String type=(String)jCvehicle.getSelectedItem();
     String plate=jTplate.getText();
     
-    String details=name+"\t"+phoneNo+"\t"+title+"\t"+vehicle+"\t"+plate;
+    String details=Vname+"\t"+color+"\t"+type+"\t"+plate;
     
     //Call the class writer function
     File_Writer obj=new File_Writer();
     obj.Witer_into_File(personFile, details);
     
-        JOptionPane.showMessageDialog(null, "Details Saved Successfully");
+        JOptionPane.showMessageDialog(null, "Vehicle Details Saved Successfully");
     
     }
     
     //Method to clear fields
     public void reset(){
-    jTname.setText("");
-    jTphone.setText("");
+    jTVname.setText("");
+    jTcolor.setText("");
     jTplate.setText("");
-    jCtitle.setSelectedIndex(0);
     jCvehicle.setSelectedIndex(0);
     
     }
