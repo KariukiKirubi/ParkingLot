@@ -36,8 +36,8 @@ public class Interface extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Algerian", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 255, 0));
+        jButton1.setFont(new java.awt.Font("Lucida Calligraphy", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Click to access the Interface");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

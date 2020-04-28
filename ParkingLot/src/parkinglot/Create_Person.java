@@ -64,6 +64,11 @@ public class Create_Person extends javax.swing.JInternalFrame {
         jBvisitorReset = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel7.setText("Student ID");
 
@@ -331,7 +336,8 @@ public class Create_Person extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBstudentSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBstudentSaveActionPerformed
-        // TODO add your handling code here:
+       //Call the method to Save the student details
+        SaveStudentDetails();
     }//GEN-LAST:event_jBstudentSaveActionPerformed
 
 
@@ -372,7 +378,7 @@ public class Create_Person extends javax.swing.JInternalFrame {
     // End of variables declaration//GEN-END:variables
         //Method to Write Student details
            public void SaveStudentDetails(){
-               String fileName="Student_Details.txt";
+               String fileName="files/Student_Details.txt";
             String name=jTStudentName.getText();
             String id=jtstudentID.getText();
             String phone=jTstudentphoneNo.getText();
@@ -383,32 +389,32 @@ public class Create_Person extends javax.swing.JInternalFrame {
             File_Writer obj=new File_Writer();
             obj.Witer_into_File(fileName, details);
 
-                JOptionPane.showMessageDialog(null, "Details Saved Successfully");
+                JOptionPane.showMessageDialog(null, "Student Details Saved Successfully");
 
             }
            //Method to Write staff details
            public void SaveStaffDetails(){
-               String fileName="Student_Details.txt";
+               String fileName="files/Staff_Details.txt";
             String name=jTstaffName.getText();
             String id=jTstaffID.getText();
             String phone=jTStaffPhone.getText();
             String desgn=(String)jCdesgnation.getSelectedItem();
 
-            String details=id+"\t"+name+"\t"+phone;
+            String details=id+"\t"+name+"\t"+phone+"\t"+desgn;
 
             //Call the class writer function
             File_Writer obj=new File_Writer();
             obj.Witer_into_File(fileName, details);
 
-                JOptionPane.showMessageDialog(null, "Details Saved Successfully");
+                JOptionPane.showMessageDialog(null, "Staff Details Saved Successfully");
 
             }
-           //Method to Write Student details
+           //Method to Write Visitor details
            public void SaveVisitorDetails(){
-               String fileName="Student_Details.txt";
-            String name=jTStudentName.getText();
-            String id=jtstudentID.getText();
-            String phone=jTstudentphoneNo.getText();
+               String fileName="files/Visitor_Details.txt";
+            String name=jTvisitorName.getText();
+            String id=jTvisitorID.getText();
+            String phone=jTvisitorPhone.getText();
 
             String details=id+"\t"+name+"\t"+phone;
 
@@ -416,8 +422,14 @@ public class Create_Person extends javax.swing.JInternalFrame {
             File_Writer obj=new File_Writer();
             obj.Witer_into_File(fileName, details);
 
-                JOptionPane.showMessageDialog(null, "Details Saved Successfully");
+                JOptionPane.showMessageDialog(null, "Visitor Details Saved Successfully");
 
             }
+           
+           //method to reset the fields
+           public void reset(){
+           
+           
+           }
 
 }
